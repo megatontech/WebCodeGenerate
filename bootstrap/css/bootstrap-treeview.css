@@ -1,0 +1,14 @@
+.treeview .list-group{ margin: 0;}
+.list-group-item.active a{ color: #ffffff;}
+.treenode {
+    cursor: pointer;
+}
+
+span.indent {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+span.icon {
+    margin-right: 5px;
+}
