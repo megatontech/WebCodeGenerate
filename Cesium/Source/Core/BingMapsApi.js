@@ -24,7 +24,7 @@ define([
      *
      * @type {String}
      */
-    BingMapsApi.defaultKey = undefined;
+    BingMapsApi.defaultKey = "Aqioj57ZIdlqHtHSWhl-nEmtOb5yyUklBGpxAnooZXC_5W9oYzZKu0Zku6Kpawxr";
 
     var printedBingWarning = false;
 
