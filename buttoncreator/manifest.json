@@ -1,0 +1,20 @@
+{
+   "author": "Merbin Joe",
+   "browser_action": {
+      "default_icon": "icon/128button.png",
+      "default_popup": "index.html"
+   },
+   "description": "Generate your button without writing Code, apply colour,size and etc using tool.",
+   "homepage_url": "http://www.allinworld99.blogspot.com",
+   "icons": {
+      "128": "icon/128button.png",
+      "16": "icon/16button.png",
+      "48": "icon/48button.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhUqJy4knsl1Kz4zzTu8Uvz328x7+an3JUyWN4Sdl0TGKI4S79nuqY2JUCLi4WEFYkCWQfhVBSU+uSslfMOBKJto5l7m+fuZxBbfCbfyMv2JbHJMMlTHyiN3SPv0qZjpB8WoghVGw1uwPqus04Q8hnkfFZ4V5npkxzMpN5mCN9kEFaQlhevCbwPvPm7ynXqyCrbF2t2FNYiQwvrL+hN85uTq6z7im8lRBTx8evwbrT3eW6QWQ56XRGJ9+/YzA/0RSfigu25+Tyqi/r+GX5wVs3rSPDQANwaXQfPbHySSANKMfNmO6hnfvuZCZWq0dSuVWg7J6zbifc3wlPzVeofEUUwIDAQAB",
+   "manifest_version": 2,
+   "name": "Offline Button Generator",
+   "offline_enabled": true,
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.9"
+}

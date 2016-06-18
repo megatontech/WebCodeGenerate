@@ -1,0 +1,1199 @@
+<html xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- Favicon start -->
+    <link href="icon/128button.ico" rel="icon" type="image/x-icon">
+    <!-- Favicon end -->
+
+    <!-- Styles -->
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/bs.css" rel="stylesheet">
+    <!--<link href="./css/bs-responsive.css" rel="stylesheet">-->
+    <link href="./css/bs-overrides.css" rel="stylesheet">
+    <link href="./css/tipsy.css" rel="stylesheet" type="text/css">
+    <link href="./css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+    <link href="./css/slate.css" rel="stylesheet">
+    <link href="./css/slate-responsive.css" rel="stylesheet">
+    <link href="./css/colorpicker.css" rel="stylesheet" type="text/css">
+    <link href="./css/button.css" rel="stylesheet" type="text/css">
+
+
+    <style type="text/css">
+        .classname {
+            -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+            -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+            box-shadow: inset 0px 1px 0px 0px #ffffff;
+            background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+            background: -moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+            background-color: #ededed;
+            -webkit-border-top-left-radius: 6px;
+            -moz-border-radius-topleft: 6px;
+            border-top-left-radius: 6px;
+            -webkit-border-top-right-radius: 6px;
+            -moz-border-radius-topright: 6px;
+            border-top-right-radius: 6px;
+            -webkit-border-bottom-right-radius: 6px;
+            -moz-border-radius-bottomright: 6px;
+            border-bottom-right-radius: 6px;
+            -webkit-border-bottom-left-radius: 6px;
+            -moz-border-radius-bottomleft: 6px;
+            border-bottom-left-radius: 6px;
+            text-indent: 0;
+            border: 1px solid #dcdcdc;
+            display: inline-block;
+            color: #777777;
+            font-family: arial;
+            font-size: 15px;
+            font-weight: bold;
+            font-style: normal;
+            height: 50px;
+            line-height: 50px;
+            width: 100px;
+            text-decoration: none;
+            text-align: center;
+            text-shadow: 1px -1px 0px #ffffff;
+        }
+        
+        .classname:hover {
+            background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+            background: -moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+            background-color: #dfdfdf;
+        }
+        
+        .classname:active {
+            position: relative;
+            top: 1px;
+        }
+    </style>
+</head>
+
+<body data-twttr-rendered="true" class="nav-fixed" style="width: 801px;">
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#">Bootstrap 按钮样式构造器</a>
+                <ul class="nav pull-right">
+                    <li>
+                        <div class="btn-group">
+                            <span><a class="btn btn-primary" href="../index.html" id="formgenerate">布局生成器</a></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <output style="display:none">
+        <style type="text/css">
+            .classname {
+                -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+                -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+                box-shadow: inset 0px 1px 0px 0px #ffffff;
+                background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+                background: -moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100%);
+                filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+                background-color: #ededed;
+                -webkit-border-top-left-radius: 6px;
+                -moz-border-radius-topleft: 6px;
+                border-top-left-radius: 6px;
+                -webkit-border-top-right-radius: 6px;
+                -moz-border-radius-topright: 6px;
+                border-top-right-radius: 6px;
+                -webkit-border-bottom-right-radius: 6px;
+                -moz-border-radius-bottomright: 6px;
+                border-bottom-right-radius: 6px;
+                -webkit-border-bottom-left-radius: 6px;
+                -moz-border-radius-bottomleft: 6px;
+                border-bottom-left-radius: 6px;
+                text-indent: 0;
+                border: 1px solid #dcdcdc;
+                display: inline-block;
+                color: #777777;
+                font-family: arial;
+                font-size: 15px;
+                font-weight: bold;
+                font-style: normal;
+                height: 50px;
+                line-height: 50px;
+                width: 100px;
+                text-decoration: none;
+                text-align: center;
+                text-shadow: 1px -1px 0px #ffffff;
+            }
+            .classname:hover {
+                background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+                background: -moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100%);
+                filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+                background-color: #dfdfdf;
+            }
+            .classname:active {
+                position: relative;
+                top: 1px;
+            }
+        </style>
+    </output>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+
+
+    <!-- /#header -->
+
+
+    <!-- /#nav -->
+
+
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="span6" style="width: 524px !important;">
+                    <div class="widget widget-accordion">
+                        <!-- /.widget-header -->
+
+                        <div class="widget-content">
+
+                            <div class="accordion" id="sample-accordion">
+
+                                <div class="accordion-group open">
+                                    <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#sample-accordion" href="#collapseOne"> 基础CSS按钮样式 </a>                                        <i class="icon-plus toggle-icon"></i> </div>
+                                    <div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
+                                        <div class="accordion-inner">
+                                            <div class="setting-container">
+                                                <label for="buttonValue">文字:</label>
+                                                <input type="text" id="buttonValue" class="input" value="TEXT">
+                                            </div>
+                                            <div class="setting-container">
+                                                <label for="classValue">CSS Class 名称:</label>
+                                                <input type="text" id="classValue" class="input" value="classname">
+                                            </div>
+                                            <div class="setting-container">
+                                                <label for="fontFamily">字体:</label>
+                                                <select id="fontFamily">
+                                                    <option value="Arial">Arial</option>
+                                                    <option value="Arial Black">Arial Black</option>
+                                                    <option value="Comic Sans MS">Comic Sans MS</option>
+                                                    <option value="Courier New">Courier New</option>
+                                                    <option value="Georgia">Georgia</option>
+                                                    <option value="Impact">Impact</option>
+                                                    <option value="Times New Roman">Times New Roman</option>
+                                                    <option value="Trebuchet MS">Trebuchet MS</option>
+                                                    <option value="Verdana">Verdana</option>
+                                                </select>
+                                            </div>
+                                            <div class="setting-container">
+                                                <label for="buttonStyle">预制样式:</label>
+                                                <select id="buttonStyle">
+                                                    <option disabled="disabled" value="" selected="selected">» Choose a Style</option>
+                                                    <option value="1">Round Orange</option>
+                                                    <option value="2">BoxCutter</option>
+                                                    <option value="3">Tabulate</option>
+                                                    <option value="4">BlueSquared</option>
+                                                    <option value="5">BlueField</option>
+                                                </select>
+                                            </div>
+                                            <div class="setting-container">
+                                                <div class="control-group">
+                                                    <label class="checkbox inline">
+                                                        <input type="checkbox" id="fontWeight" value="Font Weight" class="checkbox" checked="checked">
+                                                        <strong>加粗</strong>
+                                                    </label>
+                                                    <label class="checkbox inline" style="margin-left:29px">
+                                                        <input type="checkbox" id="fontStyle" value="Font Style" class="checkbox">
+                                                        <i>斜体</i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="setting-container">
+                                                <label for="colorStyles">颜色风格:</label>
+                                                <select id="colorStyles">
+                                                    <option disabled="disabled" value="" selected="selected">» Choose a Theme</option>
+                                                    <option value="palette0">Grey</option>
+                                                    <option value="palette13">Grey/Light</option>
+                                                    <option value="palette1">Red</option>
+                                                    <option value="palette9">Red/Darker</option>
+                                                    <option value="palette2">Green/Dark Text</option>
+                                                    <option value="palette8">Green/Light Text</option>
+                                                    <option value="palette15">Green</option>
+                                                    <option value="palette3">Blue</option>
+                                                    <option value="palette12">Blue Two</option>
+                                                    <option value="palette20">Blue Three</option>
+                                                    <option value="palette16">Blue Four</option>
+                                                    <option value="palette4">Orange</option>
+                                                    <option value="palette18">Orange Two</option>
+                                                    <option value="palette10">Orange/Light</option>
+                                                    <option value="palette14">Orange/Dark</option>
+                                                    <option value="palette17">Purple</option>
+                                                    <option value="palette5">Purple/Dark</option>
+                                                    <option value="palette6">Purple/Light</option>
+                                                    <option value="palette7">Yellow/Red</option>
+                                                    <option value="palette11">Hot Pink</option>
+                                                    <option value="palette19">Pink</option>
+                                                </select>
+                                            </div>
+                                            <div class="clear">&nbsp;</div>
+                                            <div class="clear">&nbsp;</div>
+
+
+
+
+                                            <p> </p>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-group">
+
+                                    <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#sample-accordion" href="#collapseTwo"> 边框和大小</a>                                        <i class="icon-plus toggle-icon"></i> </div>
+                                    <div id="collapseTwo" class="accordion-body collapse" style="height: 0px;">
+                                        <div class="accordion-inner">
+                                            <div class="control-group">
+                                                <label class="control-label" for="borderRadius">圆角:</label>
+                                                <div class="controls alert alert-info span3">
+                                                    <label class="checkbox inline" for="radiusTopLeft">
+                                                        <input type="checkbox" id="radiusTopLeft" value="top left" class="checkbox bordercorner" checked="checked"> 左上</label>
+                                                    <label class="checkbox inline" style="margin-left:29px" for="radiusTopRight">
+                                                        <input type="checkbox" id="radiusTopRight" value="top right" class="checkbox bordercorner" checked="checked"> 右上</label>
+                                                    <br>
+                                                    <label class="checkbox inline" for="radiusBottomLeft">
+                                                        <input type="checkbox" id="radiusBottomLeft" value="bottom left" class="checkbox bordercorner" checked="checked"> 左下</label>
+                                                    <label class="checkbox inline" for="radiusBottomRight">
+                                                        <input type="checkbox" id="radiusBottomRight" value="bottom right" class="checkbox bordercorner" checked="checked"> 右下</label>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="setting-container refresh-add border-radius">
+                                                <div class="refresh" id="refresh-borderRadius"></div>
+                                                <label for="borderRadius">半径:</label>
+                                                <input type="text" id="borderRadius" class="setting-input" readonly="">
+                                                <div id="setting-borderRadius" class="setting-slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                                    aria-disabled="false">
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 14.2857142857143%;"></a>
+                                                </div>
+                                            </div>
+                                            <div class="setting-container refresh-add">
+                                                <div class="refresh" id="refresh-horizontalText"></div>
+                                                <label for="horizontalText">水平文本对齐:</label>
+                                                <input type="text" id="horizontalText" class="setting-input" readonly="">
+                                                <div id="setting-horizontalText" class="setting-slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                                    aria-disabled="false">
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 50%;"></a>
+                                                </div>
+                                            </div>
+                                            <div style="clear:both"></div>
+                                            <div class="setting-container refresh-add">
+                                                <div class="refresh" id="refresh-fontSize"></div>
+                                                <label for="fontSize">字体大小:</label>
+                                                <input type="text" id="fontSize" class="setting-input" readonly="">
+                                                <div id="setting-fontSize" class="setting-slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                                    aria-disabled="false">
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 13.4615384615385%;"></a>
+                                                </div>
+                                            </div>
+                                            <div class="setting-container refresh-add">
+                                                <div class="refresh" id="refresh-borderSize"></div>
+                                                <label for="borderSize">边框尺寸:</label>
+                                                <input type="text" id="borderSize" class="setting-input" readonly="">
+                                                <div id="setting-borderSize" class="setting-slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                                    aria-disabled="false">
+
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+
+                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 8.33333333333333%;"></a>
+                                                </div>
+                                            </div>
+                                            <div class="setting-container refresh-add">
+                                                <div class="refresh" id="refresh-heightY"></div>
+                                                <label for="heightY">高</label>
+                                                <input type="text" id="heightY" class="setting-input" readonly="">
+                                                <div id="setting-heightY" class="setting-slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                                    aria-disabled="false">
+
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+
+                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 50%;"></a>
+
+                                                </div>
+                                            </div>
+                                            <div class="setting-container refresh-add">
+                                                <div class="refresh" id="refresh-widthX"></div>
+                                                <label for="widthX">宽</label>
+                                                <input type="text" id="widthX" class="setting-input" readonly="">
+                                                <div id="setting-widthX" style="wi" class="setting-slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                                    aria-disabled="false">
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 50%;"></a>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-group">
+                                    <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#sample-accordion" href="#collapseThree">阴影</a>                                        <i class="icon-plus toggle-icon"></i> </div>
+                                    <div id="collapseThree" class="accordion-body collapse" style="height: 0px;">
+                                        <div class="accordion-inner">
+                                            <div class="control-group">
+                                                <div class="controls alert alert-info span3">
+                                                    <label class="checkbox inline">
+                                                        <input type="checkbox" id="boxShadow-check" value="Box Shadow" checked="checked">
+                                                        <span class="boxShadow-title">阴影开关</span>
+                                                    </label>
+                                                    <span class="title-checkbox"> &nbsp;&nbsp;&nbsp;
+												<label class="checkbox inline">
+													<input type="checkbox" id="boxShadowInset" value="inset" checked="checked">
+													插♂入</label>
+												<br>
+											</span>
+                                                </div>
+                                            </div>
+                                            <div class="setting-container box-shadow refresh-add">
+                                                <div class="refresh" id="refresh-boxShadowOffsetY"></div>
+                                                <label for="boxShadowOffsetY">垂直位置:</label>
+                                                <input type="text" id="boxShadowOffsetY" class="setting-input multiple" readonly="">
+                                                <div id="option-boxShadowOffsetY" class="setting-shadow ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                                    aria-disabled="false">
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 51%;"></a>
+                                                </div>
+                                            </div>
+                                            <div class="setting-container box-shadow refresh-add">
+                                                <div class="refresh" id="refresh-boxShadowOffsetX"></div>
+                                                <label for="boxShadowOffsetX">水平位置:</label>
+                                                <input type="text" id="boxShadowOffsetX" class="setting-input multiple" readonly="">
+                                                <div id="option-boxShadowOffsetX" class="setting-shadow ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                                    aria-disabled="false">
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 51%;"></a>
+                                                </div>
+                                            </div>
+                                            <div class="setting-container box-shadow refresh-add">
+                                                <div class="refresh" id="refresh-boxShadowBlurRadius"></div>
+                                                <label for="boxShadowBlurRadius">模糊半径:</label>
+                                                <input type="text" id="boxShadowBlurRadius" class="setting-input multiple-blur" readonly="">
+                                                <div id="option-boxShadowBlurRadius" class="setting-shadow-blur ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                                    aria-disabled="false">
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
+                                                </div>
+                                            </div>
+                                            <div class="setting-container box-shadow refresh-add">
+                                                <div class="refresh" id="refresh-boxShadowSpreadRadius"></div>
+                                                <label for="boxShadowSpreadRadius">散步半径:</label>
+                                                <input type="text" id="boxShadowSpreadRadius" class="setting-input multiple" readonly="">
+                                                <div id="option-boxShadowSpreadRadius" class="setting-shadow ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                                    aria-disabled="false">
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 51%;"></a>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-group">
+                                    <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#sample-accordion" href="#collapseFour">文本阴影</a>                                        <i class="icon-plus toggle-icon"></i> </div>
+                                    <div id="collapseFour" class="accordion-body collapse" style="height: 0px;">
+                                        <div class="accordion-inner">
+                                            <div class="control-group">
+                                                <div class="controls alert alert-info span3">
+                                                    <label class="checkbox inline">
+                                                        <input type="checkbox" id="textShadow-check" value="Text Shadow" checked="checked">
+                                                        <span class="textShadow-title">文本阴影开关</span>
+                                                    </label>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                            <div class="setting-container text-shadow refresh-add">
+                                                <div class="refresh" id="refresh-textShadowOffsetY"></div>
+                                                <label for="textShadowOffsetY">垂直位置:</label>
+                                                <input type="text" id="textShadowOffsetY" class="setting-input multiple" readonly="">
+                                                <div id="option-textShadowOffsetY" class="setting-shadow ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                                    aria-disabled="false">
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 51%;"></a>
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                </div>
+                                            </div>
+                                            <div class="setting-container text-shadow refresh-add">
+                                                <div class="refresh" id="refresh-textShadowOffsetX"></div>
+                                                <label for="textShadowOffsetX">水平位置:</label>
+                                                <input type="text" id="textShadowOffsetX" class="setting-input multiple" readonly="">
+                                                <div id="option-textShadowOffsetX" class="setting-shadow ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                                    aria-disabled="false">
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 51%;"></a>
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                </div>
+                                            </div>
+                                            <div class="setting-container text-shadow refresh-add">
+                                                <div class="refresh" id="refresh-textShadowBlurRadius"></div>
+                                                <label for="textShadowBlurRadius">模糊半径:</label>
+                                                <input type="text" id="textShadowBlurRadius" class="setting-input multiple-blur" readonly="">
+                                                <div id="option-textShadowBlurRadius" class="setting-shadow-blur ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                                    aria-disabled="false">
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <!-- /.widget-content -->
+
+                    </div>
+                    <!-- /.widget -->
+
+                </div>
+                <!-- /.span4 -->
+
+                <div class="span6" style="width: 360px !important;">
+                    <div class="ie-message">（下面一段就是说你的浏览器不行，该换了） You're using Internet Explorer. Because this browser does not support CSS3, you can't use red-colored
+                        settings. In order to use all of the features of our CSS Button Generator, please download and use
+                        a modern browser such as <a href="http://www.mozilla.com/en-US/firefox/personal.html" target="blank">FireFox</a>                        or <a href="http://www.google.com/chrome" target="blank">Google Chrome</a>. <span>close</span> </div>
+                    <div class="widget">
+                        <div class="widget-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"> <a href="#preview">预览</a> </li>
+                                <li class><a href="#code">生成代码</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.widget-tabs -->
+
+                        <div class="widget-content">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="preview">
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <label class="checkbox inline">
+                                                <input type="checkbox" id="transparent" value="transparent"> 透明 </label>
+                                            <label class="checkbox inline">
+                                                <input type="checkbox" id="solid" value="solid"> 无渐变 </label>
+                                        </div>
+                                    </div>
+                                    <table class="generator">
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="classname hightlightTxt">圣地亚哥</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+
+
+
+
+                                    <div class="preview-bg"><span>背景色</span>
+                                        <div class="preview-swatch-color selected" original-title="背景色"></div>
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="default-palettes">
+                                            <div class="clear">&nbsp;</div>
+                                            <ul>
+                                                <li id="palette0" class="selected"><span class="bgTopColor" style="background-color: rgb(237, 237, 237);" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" style="background-color: rgb(223, 223, 223);" original-title="背景渐变2"></span><span class="fontColor" style="background-color: rgb(119, 119, 119);"
+                                                            original-title="Font Color"></span><span class="borderColor" style="background-color: rgb(220, 220, 220);"
+                                                            original-title="Border Color"></span><span class="boxShadowColor"
+                                                            style="background-color: rgb(255, 255, 255);" original-title="Box Shadow Color"></span>
+                                                        <span
+                                                            class="textShadowColor" style="background-color: rgb(255, 255, 255);"
+                                                            original-title="文本阴影颜色"></span>
+                                                </li>
+                                                <li id="palette1"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(254, 26, 0);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(206, 1, 0);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(216, 53, 38);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(242, 156, 147);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(178, 62, 53);"></span>
+                                                </li>
+                                                <li id="palette2"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(119, 212, 42);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(92, 184, 17);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(48, 97, 8);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(38, 138, 22);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(202, 239, 171);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(170, 222, 124);"></span>
+                                                </li>
+                                                <li id="palette3"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(121, 187, 255);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(55, 141, 229);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(132, 187, 243);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(187, 218, 247);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(82, 142, 204);"></span>
+                                                </li>
+                                                <li id="palette4"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(255, 196, 119);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(251, 158, 37);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(238, 180, 79);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(252, 226, 193);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(204, 159, 82);"></span>
+                                                </li>
+                                                <li id="palette5"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(193, 35, 222);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(162, 13, 189);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(165, 17, 192);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(225, 132, 243);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(155, 20, 179);"></span>
+                                                </li>
+                                                <li id="palette6"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(197, 121, 255);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(163, 65, 238);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(169, 70, 245);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(230, 202, 252);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(134, 40, 206);"></span>
+                                                </li>
+                                                <li id="palette7"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(240, 201, 17);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(242, 171, 30);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(201, 34, 0);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(230, 95, 68);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(249, 236, 160);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(222, 209, 124);"></span>
+                                                </li>
+                                                <li id="palette8"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(157, 206, 44);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(140, 184, 43);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(131, 196, 26);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(193, 237, 156);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(104, 147, 36);"></span>
+                                                </li>
+                                                <li id="palette9"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(242, 69, 55);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(198, 45, 31);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(208, 39, 24);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(245, 151, 142);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(129, 14, 5);"></span>
+                                                </li>
+                                                <li id="palette10"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(250, 228, 189);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(234, 195, 128);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(238, 180, 79);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(252, 248, 242);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(204, 159, 82);"></span>
+                                                </li>
+                                                <li id="palette11"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(255, 91, 176);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(239, 2, 125);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(238, 30, 181);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(251, 175, 227);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(199, 0, 103);"></span>
+                                                </li>
+                                                <li id="palette12"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(121, 187, 255);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(65, 151, 238);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(70, 157, 245);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(202, 227, 252);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(40, 122, 206);"></span>
+                                                </li>
+                                                <li id="palette13"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(249, 249, 249);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(233, 233, 233);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(102, 102, 102);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(220, 220, 220);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(255, 255, 255);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                </li>
+                                                <li id="palette14"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(246, 179, 61);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(210, 145, 5);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(237, 169, 51);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(254, 216, 151);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(205, 138, 21);"></span>
+                                                </li>
+                                                <li id="palette15"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(184, 227, 86);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(165, 204, 82);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(131, 196, 26);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(217, 251, 190);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(134, 174, 71);"></span>
+                                                </li>
+                                                <li id="palette16"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(61, 148, 246);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(30, 98, 208);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(51, 127, 237);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(151, 196, 254);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(21, 112, 205);"></span>
+                                                </li>
+                                                <li id="palette17"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(165, 61, 246);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(124, 22, 203);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(156, 51, 237);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(209, 151, 254);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(125, 21, 205);"></span>
+                                                </li>
+                                                <li id="palette18"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(255, 206, 121);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(238, 175, 65);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(238, 180, 79);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(252, 234, 202);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(206, 142, 40);"></span>
+                                                </li>
+                                                <li id="palette19"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(238, 161, 252);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(212, 65, 238);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(221, 93, 244);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(244, 202, 252);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(182, 61, 204);"></span>
+                                                </li>
+                                                <li id="palette20"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(99, 184, 238);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(70, 140, 207);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(20, 57, 106);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(56, 102, 163);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(190, 226, 249);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(124, 172, 222);"></span>
+                                                </li>
+                                                <li id="palette21"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(255, 236, 100);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(255, 171, 35);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(51, 51, 51);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(255, 170, 34);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(255, 246, 175);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(255, 238, 102);"></span>
+                                                </li>
+                                                <li id="palette22"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(250, 102, 90);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(211, 70, 57);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(216, 53, 38);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(250, 179, 173);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(152, 35, 26);"></span>
+                                                </li>
+                                                <li id="palette23"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(241, 189, 250);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(218, 128, 234);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(226, 132, 243);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(246, 220, 251);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(185, 82, 204);"></span>
+                                                </li>
+                                                <li id="palette24"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(252, 141, 131);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(228, 104, 93);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(216, 53, 38);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(247, 197, 192);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(178, 62, 53);"></span>
+                                                </li>
+                                                <li id="palette25"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(255, 255, 255);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(246, 246, 246);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(102, 102, 102);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(220, 220, 220);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(255, 255, 255);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                </li>
+                                                <li id="palette26"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(137, 196, 3);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(119, 168, 9);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(116, 184, 7);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(164, 226, 113);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(82, 128, 9);"></span>
+                                                </li>
+                                                <li id="palette27"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(189, 219, 250);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(128, 181, 234);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(132, 187, 243);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(220, 236, 251);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(82, 142, 204);"></span>
+                                                </li>
+                                                <li id="palette28"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(223, 189, 250);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(188, 128, 234);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(197, 132, 243);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(239, 220, 251);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(151, 82, 204);"></span>
+                                                </li>
+                                                <li id="palette29"><span class="bgTopColor" original-title="BG Gradient Color1" style="background-color: rgb(218, 61, 246);"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2" style="background-color: rgb(181, 30, 208);"></span><span class="fontColor" original-title="Font Color" style="background-color: rgb(255, 255, 255);"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color" style="background-color: rgb(209, 51, 237);"></span><span class="boxShadowColor" original-title="Box Shadow Color"
+                                                                style="background-color: rgb(238, 151, 254);"></span><span class="textShadowColor"
+                                                                original-title="Text Shadow Color" style="background-color: rgb(177, 21, 205);"></span>
+                                                </li>
+                                                <li id="palette0"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette1"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette2"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette3"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette4"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette5"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette6"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette7"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette8"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette9"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette10"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette11"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette12"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette13"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette14"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette15"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette16"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette17"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette18"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette19"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette20"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette21"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette22"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette23"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette24"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette25"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette26"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette27"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette28"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                                <li id="palette29"><span class="bgTopColor" original-title="BG Gradient Color1"></span>
+                                                    <span
+                                                        class="bgBottomColor" original-title="BG Gradient Color2"></span><span class="fontColor" original-title="Font Color"></span>
+                                                        <span
+                                                            class="borderColor" original-title="Border Color"></span><span class="boxShadowColor" original-title="Box Shadow Color"></span>
+                                                            <span
+                                                                class="textShadowColor" original-title="Text Shadow Color"></span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="color-picker" style="display: none;">
+                                            <div class="colorpicker" id="collorpicker_794" style="display: none; position: relative;">
+                                                <div class="colorpicker_color" style="background-color: rgb(255, 0, 255);">
+                                                    <div>
+                                                        <div style="left: 0px; top: 10px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="colorpicker_hue">
+                                                    <div style="top: 25px;"></div>
+                                                </div>
+                                                <div class="colorpicker_new_color" style="background-color: rgb(237, 237, 237);"></div>
+                                                <div class="colorpicker_current_color" style="background-color: rgb(237, 237, 237);"></div>
+                                                <div class="colorpicker_hex">
+                                                    <input type="text" maxlength="6" size="6">
+                                                </div>
+                                                <div class="colorpicker_rgb_r colorpicker_field">
+                                                    <input type="text" maxlength="3" size="3"><span></span>
+                                                </div>
+                                                <div class="colorpicker_rgb_g colorpicker_field">
+                                                    <input type="text" maxlength="3" size="3"><span></span>
+                                                </div>
+                                                <div class="colorpicker_rgb_b colorpicker_field">
+                                                    <input type="text" maxlength="3" size="3"><span></span>
+                                                </div>
+                                                <div class="colorpicker_hsb_h colorpicker_field">
+                                                    <input type="text" maxlength="3" size="3"><span></span>
+                                                </div>
+                                                <div class="colorpicker_hsb_s colorpicker_field">
+                                                    <input type="text" maxlength="3" size="3"><span></span>
+                                                </div>
+                                                <div class="colorpicker_hsb_b colorpicker_field">
+                                                    <input type="text" maxlength="3" size="3"><span></span>
+                                                </div>
+                                                <div class="colorpicker_submit"></div>
+                                            </div>
+                                            <div class="colorpicker" id="collorpicker_972" style="display: none; position: relative;">
+                                                <div class="colorpicker_color" style="background-color: rgb(255, 0, 255);">
+                                                    <div>
+                                                        <div style="left: 0px; top: 10px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="colorpicker_hue">
+                                                    <div style="top: 25px;"></div>
+                                                </div>
+                                                <div class="colorpicker_new_color" style="background-color: rgb(237, 237, 237);"></div>
+                                                <div class="colorpicker_current_color" style="background-color: rgb(237, 237, 237);"></div>
+                                                <div class="colorpicker_hex">
+                                                    <input type="text" maxlength="6" size="6">
+                                                </div>
+                                                <div class="colorpicker_rgb_r colorpicker_field">
+                                                    <input type="text" maxlength="3" size="3"><span></span>
+                                                </div>
+                                                <div class="colorpicker_rgb_g colorpicker_field">
+                                                    <input type="text" maxlength="3" size="3"><span></span>
+                                                </div>
+                                                <div class="colorpicker_rgb_b colorpicker_field">
+                                                    <input type="text" maxlength="3" size="3"><span></span>
+                                                </div>
+                                                <div class="colorpicker_hsb_h colorpicker_field">
+                                                    <input type="text" maxlength="3" size="3"><span></span>
+                                                </div>
+                                                <div class="colorpicker_hsb_s colorpicker_field">
+                                                    <input type="text" maxlength="3" size="3"><span></span>
+                                                </div>
+                                                <div class="colorpicker_hsb_b colorpicker_field">
+                                                    <input type="text" maxlength="3" size="3"><span></span>
+                                                </div>
+                                                <div class="colorpicker_submit"></div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="current-palette"><span class="bgTopColor selected" style="background-color: rgb(237, 237, 237);" original-title="BG Gradient Color1"></span>
+                                            <span
+                                                class="bgBottomColor" style="background-color: rgb(223, 223, 223);" original-title="BG Gradient Color2"></span><span class="fontColor" style="background-color: rgb(119, 119, 119);"
+                                                    original-title="Font Color"></span><span class="borderColor" style="background-color: rgb(220, 220, 220);"
+                                                    original-title="Border Color"></span><span class="boxShadowColor" style="background-color: rgb(255, 255, 255);"
+                                                    original-title="Box Shadow Color"></span><span class="textShadowColor" style="background-color: rgb(255, 255, 255);"
+                                                    original-title="Text Shadow Color"></span>
+                                        </div>
+                                    </div>
+                                    <br>
+
+
+
+                                </div>
+                                <div class="tab-pane" id="code">
+                                    <div class="control-group">
+                                        <label class="control-label" for="message">HTML</label>
+                                        <div class="controls">
+                                            <input type="text" class="input-large span5" id="buttonCode">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="checkbox inline pull-right" for="styleTag" style="margin-right:100px">
+                                            <input type="checkbox" id="styleTag" value="<a href=&quot;#&quot; class=&quot;classname&quot;>TEXT</a>" checked="checked"> Show &lt;style&gt; tag?
+                                        </label>
+
+                                        <label class="control-label" for="generatedcode">CSS</label>
+
+
+                                        <div class="controls">
+
+                                            <textarea class="input-large span5" name="generatedcode" id="generatedcode" rows="3" style="height: 239px;resize:none;"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- IMPORTANT: CSS codes are loaded in this element -->
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- /.widget-content -->
+
+                </div>
+                <!-- /.widget -->
+
+            </div>
+            <!-- /.span7 -->
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+
+    <!-- /#content -->
+
+
+
+
+    <!-- /#footer -->
+
+
+    <!-- Javascript Start -->
+    <script src="./js/jquery-1.7.2.min.js"></script>
+    <script src="./js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="./js/colorpicker.js"></script>
+    <script type="text/javascript" src="./js/jquery.tipsy.js"></script>
+    <script src="./js/jquery.ui.touch-punch.min.js"></script>
+    <script src="./js/bs.js"></script>
+    <script src="./js/Slate.js"></script>
+    <script src="./js/plugins/excanvas/excanvas.min.js"></script>
+    <script src="./js/button.js" type="text/javascript"></script>
+    <script src="./js/cl.js"></script>
+
+
+
+    <!-- Javascript End -->
+    <div class="colorpicker" id="collorpicker_811">
+        <div class="colorpicker_color" style="background-color: rgb(255, 0, 255);">
+            <div>
+                <div style="left: 0px; top: 5px;"></div>
+            </div>
+        </div>
+        <div class="colorpicker_hue">
+            <div style="top: 25px;"></div>
+        </div>
+        <div class="colorpicker_new_color" style="background-color: rgb(245, 245, 245);"></div>
+        <div class="colorpicker_current_color" style="background-color: rgb(245, 245, 245);"></div>
+        <div class="colorpicker_hex">
+            <input type="text" maxlength="6" size="6">
+        </div>
+        <div class="colorpicker_rgb_r colorpicker_field">
+            <input type="text" maxlength="3" size="3"><span></span>
+        </div>
+        <div class="colorpicker_rgb_g colorpicker_field">
+            <input type="text" maxlength="3" size="3"><span></span>
+        </div>
+        <div class="colorpicker_rgb_b colorpicker_field">
+            <input type="text" maxlength="3" size="3"><span></span>
+        </div>
+        <div class="colorpicker_hsb_h colorpicker_field">
+            <input type="text" maxlength="3" size="3"><span></span>
+        </div>
+        <div class="colorpicker_hsb_s colorpicker_field">
+            <input type="text" maxlength="3" size="3"><span></span>
+        </div>
+        <div class="colorpicker_hsb_b colorpicker_field">
+            <input type="text" maxlength="3" size="3"><span></span>
+        </div>
+        <div class="colorpicker_submit"></div>
+    </div>
+</body>
+
+</html>
