@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/megatontech/WebCodeGenerate.svg?branch=master)](https://travis-ci.org/megatontech/WebCodeGenerate)
 # WebCodeGenerate
 页面布局生成器/原型图生成工具，复制了LayoutIt的项目，加入了一些实用功能和组件
 最好部署发布到本地的服务器，用的时候敲个localhost就行了，有bug改起来也方便
