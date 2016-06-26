@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <!-- saved from url=(0048)http://www.bootcss.com/p/bootstrap-form-builder/ -->
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -12,40 +13,41 @@
     <link href="./formgenerate/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+            padding-top: 60px;
+            /* 60px to make the container go all the way to the bottom of the topbar */
             padding-bottom: 10px;
         }
-
+        
         #components {
             min-height: 600px;
         }
-
+        
         #target {
             min-height: 200px;
             border: 1px solid #ccc;
             padding: 5px;
         }
-
-            #target .component {
-                border: 1px solid #fff;
-            }
-
+        
+        #target .component {
+            border: 1px solid #fff;
+        }
+        
         #temp {
             width: 500px;
             background: white;
             border: 1px dotted #ccc;
             border-radius: 10px;
         }
-
+        
         .popover-content form {
             margin: 0 auto;
             width: 213px;
         }
-
-            .popover-content form .btn {
-                margin-right: 10px;
-            }
-
+        
+        .popover-content form .btn {
+            margin-right: 10px;
+        }
+        
         #source {
             min-height: 500px;
         }
@@ -56,6 +58,7 @@
     <![endif]-->
     <style type="text/css"></style>
 </head>
+
 <body>
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
@@ -66,6 +69,8 @@
                     <span class="icon-bar"></span>
                 </a>
                 <a class="brand" href="#">Bootstrap 表单构造器</a>
+                <select id="h-emot-select"><option value="">无</option><option value="|∀ﾟ">|∀ﾟ</option><option value="(´ﾟДﾟ`)">(´ﾟДﾟ`)</option><option value="(;´Д`)">(;´Д`)</option><option value="(｀･ω･)">(｀･ω･)</option><option value="(=ﾟωﾟ)=">(=ﾟωﾟ)=</option><option value="| ω・´)">| ω・´)</option><option value="|-` )">|-` )</option><option value="|д` )">|д` )</option><option value="|ー` )">|ー` )</option><option value="|∀` )">|∀` )</option><option value="(つд⊂)">(つд⊂)</option><option value="(ﾟДﾟ≡ﾟДﾟ)">(ﾟДﾟ≡ﾟДﾟ)</option><option value="(＾o＾)ﾉ">(＾o＾)ﾉ</option><option value="(|||ﾟДﾟ)">(|||ﾟДﾟ)</option><option value="( ﾟ∀ﾟ)">( ﾟ∀ﾟ)</option><option value="( ´∀`)">( ´∀`)</option><option value="(*´∀`)">(*´∀`)</option><option value="(*ﾟ∇ﾟ)">(*ﾟ∇ﾟ)</option><option value="(*ﾟーﾟ)">(*ﾟーﾟ)</option><option value="(　ﾟ 3ﾟ)">(　ﾟ 3ﾟ)</option><option value="( ´ー`)">( ´ー`)</option><option value="( ・_ゝ・)">( ・_ゝ・)</option><option value="( ´_ゝ`)">( ´_ゝ`)</option><option value="(*´д`)">(*´д`)</option><option value="(・ー・)">(・ー・)</option><option value="(・∀・)">(・∀・)</option><option value="(ゝ∀･)">(ゝ∀･)</option><option value="(〃∀〃)">(〃∀〃)</option><option value="(*ﾟ∀ﾟ*)">(*ﾟ∀ﾟ*)</option><option value="( ﾟ∀。)">( ﾟ∀。)</option><option value="( `д´)">( `д´)</option><option value="(`ε´ )">(`ε´ )</option><option value="(`ヮ´ )">(`ヮ´ )</option><option value="σ`∀´)">σ`∀´)</option><option value=" ﾟ∀ﾟ)σ"> ﾟ∀ﾟ)σ</option><option value="ﾟ ∀ﾟ)ノ">ﾟ ∀ﾟ)ノ</option><option value="(╬ﾟдﾟ)">(╬ﾟдﾟ)</option><option value="(|||ﾟдﾟ)">(|||ﾟдﾟ)</option><option value="( ﾟдﾟ)">( ﾟдﾟ)</option><option value="Σ( ﾟдﾟ)">Σ( ﾟдﾟ)</option><option value="( ;ﾟдﾟ)">( ;ﾟдﾟ)</option><option value="( ;´д`)">( ;´д`)</option><option value="(　д ) ﾟ ﾟ">(　д ) ﾟ ﾟ</option><option value="( ☉д⊙)">( ☉д⊙)</option><option value="(((　ﾟдﾟ)))">(((　ﾟдﾟ)))</option><option value="( ` ・´)">( ` ・´)</option><option value="( ´д`)">( ´д`)</option><option value="( -д-)">( -д-)</option><option value="(>д<)">(&gt;д&lt;)</option><option value="･ﾟ( ﾉд`ﾟ)">･ﾟ( ﾉд`ﾟ)</option><option value="( TдT)">( TдT)</option><option value="(￣∇￣)">(￣∇￣)</option><option value="(￣3￣)">(￣3￣)</option><option value="(￣ｰ￣)">(￣ｰ￣)</option><option value="(￣ . ￣)">(￣ . ￣)</option><option value="(￣皿￣)">(￣皿￣)</option><option value="(￣艸￣)">(￣艸￣)</option><option value="(￣︿￣)">(￣︿￣)</option><option value="(￣︶￣)">(￣︶￣)</option><option value="ヾ(´ωﾟ｀)">ヾ(´ωﾟ｀)</option><option value="(*´ω`*)">(*´ω`*)</option><option value="(・ω・)">(・ω・)</option><option value="( ´・ω)">( ´・ω)</option><option value="(｀・ω)">(｀・ω)</option><option value="(´・ω・`)">(´・ω・`)</option><option value="(`・ω・´)">(`・ω・´)</option><option value="( `_っ´)">( `_っ´)</option><option value="( `ー´)">( `ー´)</option><option value="( ´_っ`)">( ´_っ`)</option><option value="( ´ρ`)">( ´ρ`)</option><option value="( ﾟωﾟ)">( ﾟωﾟ)</option><option value="(oﾟωﾟo)">(oﾟωﾟo)</option><option value="(　^ω^)">(　^ω^)</option><option value="(｡◕∀◕｡)">(｡◕∀◕｡)</option><option value="/( ◕‿‿◕ )\">/( ◕‿‿◕ )\</option><option value="ヾ(´ε`ヾ)">ヾ(´ε`ヾ)</option><option value="(ノﾟ∀ﾟ)ノ">(ノﾟ∀ﾟ)ノ</option><option value="(σﾟдﾟ)σ">(σﾟдﾟ)σ</option><option value="(σﾟ∀ﾟ)σ">(σﾟ∀ﾟ)σ</option><option value="|дﾟ )">|дﾟ )</option><option value="┃電柱┃">┃電柱┃</option><option value="ﾟ(つд`ﾟ)">ﾟ(つд`ﾟ)</option><option value="ﾟÅﾟ )　">ﾟÅﾟ )　</option><option value="⊂彡☆))д`)">⊂彡☆))д`)</option><option value="⊂彡☆))д´)">⊂彡☆))д´)</option><option value="⊂彡☆))∀`)">⊂彡☆))∀`)</option><option value="(´∀((☆ミつ">(´∀((☆ミつ</option></select>
+                <input type="text" id="moefont" value="" />
                 <ul class="nav pull-right">
                     <li>
                         <div class="btn-group">
@@ -452,8 +457,10 @@
                         </fieldset>
                     </form>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- /container -->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- /container -->
         <script src="./formgenerate/jquery.min.js"></script>
         <script src="./formgenerate/bootstrap.min.js"></script>
         <script src="./formgenerate/fb.js"></script>
@@ -503,7 +510,12 @@
                 placement: 'top',
                 content: '代码已复制到剪切板,限IE/FF'
             });
+            $("#h-emot-select").change(function (){
+
+                $("#moefont").val( $("#h-emot-select").val());
+            });
         </script>
     </div>
 </body>
+
 </html>
